@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flyxpass"
+dynamic = ["version"]
+description = "Rate password strength and check it against Have I Been Pwned without ever sending the password."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+authors = [{ name = "Butt3rFLYX" }]
+keywords = ["password", "security", "haveibeenpwned", "entropy", "k-anonymity", "cli"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Security",
+    "Topic :: Utilities",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/Butt3rFLYX/flyxpass"
+Issues = "https://github.com/Butt3rFLYX/flyxpass/issues"
+
+[project.scripts]
+flyxpass = "flyxpass.cli:main"
+
+[tool.setuptools]
+packages = ["flyxpass"]
+
+[tool.setuptools.dynamic]
+version = { attr = "flyxpass.__version__" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra"
+markers = ["live: queries the real Pwned Passwords API (needs FLYXPASS_LIVE_TESTS=1)"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "S", "SIM"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S101", "S105", "S106", "S311"]
