@@ -7,7 +7,7 @@ name = "flyxpass"
 dynamic = ["version"]
 description = "Rate password strength and check it against Have I Been Pwned without ever sending the password."
 readme = "README.md"
-license = "MIT"
+license = "GPL-3.0-only"
 license-files = ["LICENSE"]
 requires-python = ">=3.10"
 authors = [{ name = "Butt3rFLYX" }]

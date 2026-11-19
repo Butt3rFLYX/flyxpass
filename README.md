@@ -3,7 +3,7 @@
 [![CI](https://github.com/Butt3rFLYX/flyxpass/actions/workflows/ci.yml/badge.svg)](https://github.com/Butt3rFLYX/flyxpass/actions/workflows/ci.yml)
 ![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)
 ![No dependencies](https://img.shields.io/badge/dependencies-none-brightgreen)
-[![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![License: GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue)](LICENSE)
 
 **Rate how strong a password is and check whether it has appeared in a known
 data breach without the password ever leaving your computer.**
@@ -243,4 +243,11 @@ Breach data comes from Troy Hunt's
 
 ## License
 
-[MIT](LICENSE)
+Copyright (C) 2026 Butt3rFLYX
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the [GNU General Public License, version 3](LICENSE).
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the [GNU General Public License](LICENSE) for more details.
